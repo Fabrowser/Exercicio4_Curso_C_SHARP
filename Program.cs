@@ -12,7 +12,7 @@ namespace Exercicio4
 
             while (opcao != 0)
             {
-                Console.WriteLine(" [1] - IMPARES \n [2] - INTERVALO(0,20) \n [3] - TESTE \n Digite a opção: \n ");
+                Console.WriteLine(" [1] - IMPARES \n [2] - INTERVALO(0,20) \n [3] - TESTE \n [4] FATORIAL \n Digite a opção: \n ");
                 opcao = int.Parse(Console.ReadLine());
 
                 if (opcao == 1)
@@ -79,6 +79,24 @@ namespace Exercicio4
                     }
 
 
+
+                }
+                else if (opcao == 4)
+                {
+                    double fatorial=0;
+                    Console.WriteLine("Digite um número: ");
+                    int n = int.Parse(Console.ReadLine());
+                    fatorial = n;
+
+                    for (int i = n; i >1; i--)
+                    {
+                
+
+                        fatorial = fatorial * (i - 1);
+
+                    }
+
+                    Console.WriteLine(n + "! (FATORIAL) = "+ fatorial);
 
                 }
 
